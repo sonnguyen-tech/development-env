@@ -2,7 +2,7 @@ syntax on
 
 set hidden
 set noerrorbells
-set tabstop=4 softtabstop=4
+set tabstop=2 softtabstop=2
 set shiftwidth=4
 set expandtab
 set smartindent
@@ -14,7 +14,9 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-"
+
+set hlsearch
+
 " Give more space for displaying messages.
 set cmdheight=2
 
@@ -39,6 +41,7 @@ Plug 'vim-utils/vim-man'
 Plug 'lyuts/vim-rtags'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'mbbill/undotree'
+Plug 'francoiscabrol/ranger.vim'
 
 call plug#end()
 
@@ -69,6 +72,10 @@ nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+" Create new Tabs.
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-t>     <Esc>:tabnew<CR>
 
 fun! GoYCM()
     nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
