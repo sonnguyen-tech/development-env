@@ -42,6 +42,8 @@ Plug 'lyuts/vim-rtags'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'mbbill/undotree'
 Plug 'francoiscabrol/ranger.vim'
+Plug 'preservim/nerdtree'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -76,6 +78,12 @@ vnoremap K :m '<-2<CR>gv=gv
 " Create new Tabs.
 nnoremap <C-t>     :tabnew<CR>
 inoremap <C-t>     <Esc>:tabnew<CR>
+
+" NERDTree
+nnoremap <C-o>      :NERDTreeToggle<CR>
+
+" Easy-Motion
+map ; <Plug>(easymotion-w)
 
 fun! GoYCM()
     nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
