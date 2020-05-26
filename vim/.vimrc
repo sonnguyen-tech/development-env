@@ -63,10 +63,16 @@ let g:netrw_winsize = 25
 
 let g:ctrlp_use_caching = 0
 
+" Navigate Screen
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
+nnoremap <leader><Left> :wincmd h<CR>
+nnoremap <leader><Down> :wincmd j<CR>
+nnoremap <leader><Up> :wincmd k<CR>
+nnoremap <leader><Right> :wincmd l<CR>
+
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
