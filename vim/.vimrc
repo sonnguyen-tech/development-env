@@ -86,7 +86,7 @@ nnoremap <C-t>     :tabnew<CR>
 inoremap <C-t>     <Esc>:tabnew<CR>
 
 " NERDTree
-nnoremap <C-o>      :NERDTreeToggle<CR>
+nnoremap <C-0> :NERDTreeToggle %<CR>
 
 " Easy-Motion
 map ; <Plug>(easymotion-w)
