@@ -27,10 +27,16 @@ In your .vimrc install plugin by doing `esc` +  `:PlugInstall`
 
 ### Important ❗❗
 
-You need to manual install YouCompleteMe
+You need to manualy install YouCompleteMe
 
 ```
 cd ~/.vim/plugged/YouCompleteMe
 
 python3 install.py
+```
+
+For specific language installation example
+
+```
+python3 install.py --typescript-completer
 ```
